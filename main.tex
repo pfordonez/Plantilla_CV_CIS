@@ -1,18 +1,26 @@
 \documentclass[]{cv-style} % Add 'print' in [] to get print-view
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
 \usepackage{graphicx}
 \usepackage[skins]{tcolorbox}
+\usepackage{hyperref}
+
 \begin{document}
 \header{Pablo F.}{ Ordoñez-Ordoñez}
+\hfill
+
 \begin{aside}
-\includegraphics[scale=0.5]{logoCOMP.png}
-\section{DOCENTE INVESTIGADOR {CISC-UNL}} %Rol en este proyecto
-~
-\\
 \resizebox{100pt}{100pt}{
     \begin{tikzpicture}
       \node[circle,draw,inner sep=1cm,fill overzoom image=foto.png] (A) {};
     \end{tikzpicture}
   }
+
+\section{DOCENTE INVESTIGADOR} 
+
+\hfill
+
+\includegraphics[scale=0.5]{logoCOMP.png}
 \section{Contacto}
 Documento Nacional: 1103674788
 Loja, Ecuador
@@ -29,18 +37,17 @@ OTRA FORMACIÓN:
 Doctorando en Ciencias y Tecnologías de la Computación para Smart Cities
 Maestrante en Ingeniería Computacional y Sistemas Inteligentes 
 ~
-\section{Redes Sociales}
-
-\small
-\url{https://www.researchgate.net/profile/Pablo_Ordonez-Ordonez}
-~
-\url{https://orcid.org/0000-0001-8079-7694}
-~
-\url{https://www.linkedin.com/in/pfordonez/}
-~
-
+%\section{}
+\href{https://www.researchgate.net/profile/Pablo_Ordonez-Ordonez}{1\includegraphics[width=0.7cm]{rgate.png}}
+\hfill
+\href{https://www.linkedin.com/in/pfordonez/}{2 \includegraphics[width=0.7cm]{linkedin.png}}
+\hfill
+\href{https://orcid.org/0000-0001-8079-7694}{3\includegraphics[width=0.7cm]{orcid.png}}
+\hfill
+\href{https://scholar.google.com/citations?hl=es&authuser=1&user=3q7qBpwAAAAJ}{4\includegraphics[width=0.7cm]{google.png}}
 
 \end{aside}
+
 \small
 \section{Perfil Profesional}
   \vspace{-0.3cm}
@@ -91,26 +98,28 @@ Como Ingeniero en Sistemas Informáticos y Computación, mi formación académic
 
 \section{Publicaciones} %En formato cita APA, las últimas o las mas relevantes
 \vspace{-0.3cm}
+
 \begin{entrylist}
 \entry
     {2013 - actual}
     {10 publicaciones: {\normalfont 2} en revistas, {\normalfont 8} en libros de congresos}
     {Scopus - Latindex}
     {\jobtitle{Resumen:}
-
-\begin{itemize}
-\item \small Ordonez-Ordonez, P. F., Herrera-Loaiza, D. D., \& Figueroa-Diaz, R. (2018, December). Vulnerabilities in Banking Transactions with Mobile Devices Android: A Systematic Literature Review. In Technology Trends: 4th International Conference, CITT 2018, Babahoyo, Ecuador, August 29–31, 2018, Revised Selected Papers (Vol. 895, p. 104). Springer.
-\item Ordonez-Ordonez, P. F., Quizhpe, M., Cumbicus-Pineda, O. M., Salazar, V. H., \& Figueroa-Diaz, R. (2018, August). Application of Genetic Algorithms in Software Engineering: A Systematic Literature Review. In International Conference on Technology Trends (pp. 659-670). Springer, Cham.
-\item Pineda, A. I. G., \& Ordonez, P. F. O. (2014). Identificacion de Factores en la Desercion y Reprobacion Universitaria. In Actas del VI Congreso Internacional sobre Aplicación de Tecnologias de la Informacion y Comunicaciones Avanzadas (ATICA 2014): Universidad de Alcala de Henares (Espana), 29-31 de octubre de 2014 (pp. 473-480).
-\item Cumbicus-Pineda, O. M., Ordonez-Ordonez, P. F., Neyra-Romero, L. A., \& Figueroa-Diaz, R. (2018, August). Automatic Categorization of Tweets on the Political Electoral Theme Using Supervised Classification Algorithms. In International Conference on Technology Trends (pp. 671-682). Springer, Cham.
-\item Suntaxi-Sarango, M. C., Ordonez-Ordonez, P. F., \& Pesantez-Gonzalez, M. A. (2018). Applications of Deep Learning in Financial Intermediation: A Systematic Literature Review. KnE Engineering, 3(9), 47-60.
-\end{itemize}
 }
 \end{entrylist} 
-\section{Proyectos de Investigación}
+
+%Publicaciones desde el archivo pub.bib
+\nocite{Gravina2021} \nocite{CalderonOrdonez}
+\nocite{Cumbicus-Pineda2019}\nocite{MallaSanchez}\nocite{DarwinGualotuna}\nocite{Ordonez-Ordonez2019}\nocite{Ordonez-Ordonez2019a}\nocite{Ordonez-Ordonez2020}\nocite{pineda2014identificacion}\nocite{RivasEcheverria}
+\bibliographystyle{ieeetr}
+\bibliography{pub.bib} 
+
+\section{Proyectos y Redes de Investigación}
 \vspace{-0.3cm}
 \begin{itemize}
-    \item  \small Ambiente inteligente para el macro laboratorio de formación conjunta en la Facultad de Energía de la Universidad Nacional de Loja: SmartLab, monto de \$48000 financiado por la UNL.
-    \item \small Diagnóstico y prospectiva de las energías que interactúan en la zona 7 del Ecuador, monto de \$30000 financiado por la UNL.
+    \item  \small Proyecto Ambiente inteligente para el macro laboratorio de formación conjunta en la Facultad de Energía de la Universidad Nacional de Loja: SmartLab, monto de \$48000 financiado por la UNL.
+    \item \small Proyecto Diagnóstico y prospectiva de las energías que interactúan en la zona 7 del Ecuador, monto de \$30000 financiado por la UNL.
+    \item \small RAIN Ecuador, \url{https://www.rainedu.org/} Red de Aprendizaje Inmersivo del Ecuador
+    \item \small Red de investigación CLEI, \url{https://www.clei.org/} Centro Latinoamericano de Estudios en Informática
 \end{itemize}
 \end{document}
